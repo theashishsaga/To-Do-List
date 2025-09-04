@@ -5,12 +5,14 @@
 }
 .navbar {
   height: 16vh;
-  width: 100vw;
+  width: 99vw;
   background-color: rgb(51, 218, 179);
   display: flex;
   color: rgb(245, 249, 249);
   /* justify-content: center; */
   /* justify-content:space-evenly; */
+  /* flex-wrap: wrap; */
+
 }
 .about ul li {
   /* padding-left:px; */
@@ -116,7 +118,17 @@
   flex-direction: column;
   gap: 15px;
   margin-left: 80px;
+  margin-top: 15px;
 }
+@media (max-width: 900px) {   /* replace with actual px value */
+  .navbar {
+    background-color: rgb(22, 88, 88);
+    flex-wrap: wrap;
+    height: auto;
+    margin-bottom: auto;
+  }
+}
+
 /* main  */
 main {
   display: flex;
@@ -206,4 +218,30 @@ main {
 }
 .watch_head{
    margin-left: 30px;
+   
+}
+
+/* footer */
+footer {
+  background-color: cadetblue;
+  margin-top: 5px;
+  padding: 20px;
+  display: flex;                  
+  flex-direction: row;            
+  justify-content: space-between; 
+   align-items: flex-start;      
+}
+
+#text {
+  margin: 0 0 10px 0; /* clean margins */
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column; /* stack text + links inside navigation */
+  gap: 5px;
+}
+
+.details {
+  max-width: 50%;  /* prevents text from stretching too much */
 }
