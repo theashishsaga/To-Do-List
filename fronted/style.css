@@ -2,58 +2,90 @@
   /* padding: 0; */
   margin: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .navbar {
   height: 16vh;
   width: 99vw;
-  background-color: rgb(51, 218, 179);
+  background-color: rgb(116, 140, 134);
   display: flex;
-  color: rgb(245, 249, 249);
   /* justify-content: center; */
   /* justify-content:space-evenly; */
   /* flex-wrap: wrap; */
-
 }
 .about ul li {
   /* padding-left:px; */
   margin-top: 15px;
   width: 100px;
-  /* text-decoration: none; */
-  text-shadow: 2px 2px 3px rgb(62, 185, 246);
-  /* justify-content:space-evenly; */
+  text-shadow: 2px 2px 3px rgb(77, 177, 228);
+  text-transform: capitalize;
 }
 .fitness {
   margin-top: 10px;
   display: flex;
-  /* flex-wrap: wrap; */
-
   gap: 20px;
 }
 .container1 button {
   margin-bottom: 20px;
   margin-left: 25px;
+  border: none;
+  border-radius: 6px;
+  width: 5rem;
+  height: 2rem;
+  background: #000;
+  color: #f8f6f6;
+  transition: 0.3;
+}
+.container1 button:hover {
+  background: #867373;
+  cursor: pointer;
 }
 .container2 button {
   margin-bottom: 20px;
   margin-left: 25px;
+  border: none;
+  border-radius: 6px;
+  width: 5rem;
+  height: 2rem;
+  background: #000;
+  color: #f8f6f6;
+  transition: 0.3;
+}
+.container2 button:hover {
+  background: #776565;
+  cursor: pointer;
 }
 .container3 button {
   margin-bottom: 20px;
   margin-left: 25px;
+  border: none;
+  border-radius: 6px;
+  width: 5rem;
+  height: 2rem;
+  background: #000;
+  color: #f8f6f6;
+  transition: 0.3;
+}
+.container3 button:hover {
+  background: #776565;
+  cursor: pointer;
 }
 .box1 {
-  height: 20px;
+  height: 35px;
   width: 150px;
+  border-radius: 6px;
   background-color: rgb(255, 255, 255);
 }
 .box2 {
-  height: 20px;
+  height: 35px;
   width: 150px;
+  border-radius: 6px;
   background-color: rgb(255, 255, 255);
 }
 .box3 {
-  height: 20px;
+  height: 35px;
   width: 150px;
+  border-radius: 6px;
   background-color: rgb(255, 255, 255);
 }
 .celebration {
@@ -68,14 +100,14 @@
   padding: 10px 10px;
   border: none;
   border-radius: 6px;
-  background: #222;
+  background: #181818;
   color: white;
   cursor: pointer;
   transition: background 0.3s;
 }
 
 .celebration button:hover {
-  background: #000;
+  background: #746060;
 }
 
 /* Result boxes */
@@ -87,14 +119,14 @@
 
 .result div {
   width: 100px;
-  height: 20px;
+  height: 35px;
   margin-left: 30px;
   border-radius: 6px;
   display: flex;
   align-items: center; /* center text vertically */
   justify-content: center; /* center text horizontally */
   font-weight: bold;
-  color: rgb(214, 48, 48);
+  /* color: rgb(214, 48, 48); */
 }
 
 /* Colors for clarity */
@@ -112,15 +144,29 @@
 .motivation {
   margin-top: 15px;
   margin-left: 30px;
+  color: #ffffff;
 }
 .switch {
+  color: #ffffff;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
   margin-left: 80px;
   margin-top: 15px;
 }
-@media (max-width: 900px) {   /* replace with actual px value */
+.switch button{
+  border: none;
+  border-radius: 5px;
+  background: #000;
+  color: #ffffff;
+  transition: 0.3;
+}
+.switch button:hover{
+  background: #746060;
+  cursor: pointer;
+}
+@media (max-width: 900px) {
+  /* replace with actual px value */
   .navbar {
     background-color: rgb(22, 88, 88);
     flex-wrap: wrap;
@@ -132,13 +178,14 @@
 /* main  */
 main {
   display: flex;
+  
 }
 /* sidebar */
 .sidebar {
   /* padding-left: 40px; */
   width: 25vw;
   height: 85vh;
-  background-color: rgb(92, 130, 146);
+  background-color: rgb(3, 28, 39);
   display: flex;
   flex-direction: column;
 }
@@ -180,7 +227,7 @@ main {
 /* Task */
 .List {
   width: 25vw;
-  background-color: rgb(181, 111, 166);
+  background-color:rgb(3, 28, 39);
   display: flex;
   flex-direction: column;
 }
@@ -200,25 +247,24 @@ main {
   width: 9vw;
 }
 /* show list which is marked */
-.list{
-  background-color: aquamarine;
+.list {
+  background-color: rgb(3, 28, 39);
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-.task2{
+.task2 {
   margin-left: 20px;
 }
 /* watch */
-.watch{
+.watch {
   width: 28vw;
-  background-color: burlywood;
+  background-color: rgb(3, 28, 39);
   display: flex;
   flex-direction: column;
 }
-.watch_head{
-   margin-left: 30px;
-   
+.watch_head {
+  margin-left: 30px;
 }
 
 /* footer */
@@ -226,10 +272,10 @@ footer {
   background-color: cadetblue;
   margin-top: 5px;
   padding: 20px;
-  display: flex;                  
-  flex-direction: row;            
-  justify-content: space-between; 
-   align-items: flex-start;      
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 #text {
@@ -243,5 +289,5 @@ footer {
 }
 
 .details {
-  max-width: 50%;  /* prevents text from stretching too much */
+  max-width: 50%; /* prevents text from stretching too much */
 }
